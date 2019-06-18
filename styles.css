@@ -2,14 +2,17 @@
   box-sizing: border-box;
 }
 
+body {
+margin: 0;
+}
+
 h2 {
   font-family: sans-serif;
   color: #394648;
   text-transform: none;
-  font-size: 3.5em;
+  font-size: 3em;
   text-align:center;
   padding-bottom:50px;
-  margin-top:0;
 }
 
 .main-wrapper {
@@ -17,35 +20,39 @@ h2 {
 }
 
 .wrapper {
-  width: 100%;
+  width: 30%;
+  margin: 0 auto;
+  min-width:500px;
 }
 
 .mod-container-all {
   display:flex;
   flex-direction:row;
   justify-content: space-between;
-  width:55%;
+  width:100%;
   margin: 0 auto;
   flex-wrap:wrap;
-  min-width:775.5px;
-
 }
 
 .mod-wrap {
   position: relative;
-  flex-grow:1;
+  flex-grow:0 0 auto;
+  width: 6em;
+  height: 6em;
 }
 
 .mod-image {
   border-radius: 50%;
   position: absolute;
   transition: box-shadow .3s ease-in-out;
+  width: 6em;
+  height: 6em;
 }
 
 .mod-overlay {
   background-color: #720E0E;
-  width:150px;
-  height:150px;
+  width:6em;
+  height:6em;
   border-radius: 50%;
   display: flex;
   position: absolute;
@@ -64,9 +71,10 @@ h2 {
 
 .faculty-name {
   position:absolute;
-  bottom:-200px;
+  bottom:-175px;
   opacity:0;
   transition: opacity .5s .1s ease-in-out;
+  text-align: center;
 }
 
 /* Pseudo-Classes */
