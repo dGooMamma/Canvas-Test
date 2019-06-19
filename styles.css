@@ -23,7 +23,7 @@ h2 {
 .wrapper {
   width: 50%;
   margin: 0 auto;
-  min-width:600px;
+  min-width:500px;
 }
 
 .mod-container-all {
@@ -123,7 +123,7 @@ h2 {
 
 /* Media Queries */
 
-@media (max-width: 600px){
+@media (max-width: 860px){
 
   h2 {
     font-size: 2em;
@@ -164,7 +164,7 @@ h2 {
 
   .faculty-name {
     opacity:1;
-    right:-200px;
+    right:-300px;
     top:30%;
     font-size: .8em;
 
