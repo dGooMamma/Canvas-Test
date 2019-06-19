@@ -10,9 +10,10 @@ h2 {
   font-family: sans-serif;
   color: #394648;
   text-transform: none;
-  font-size: 3em;
+  font-size: 1.7em;
   text-align:center;
   padding-bottom:50px;
+  font-weight:bolder;
 }
 
 .main-wrapper {
@@ -20,9 +21,9 @@ h2 {
 }
 
 .wrapper {
-  width: 25%;
+  width: 50%;
   margin: 0 auto;
-  min-width:500px;
+  min-width:600px;
 }
 
 .mod-container-all {
@@ -31,28 +32,28 @@ h2 {
   justify-content: space-between;
   width:100%;
   margin: 0 auto;
-  flex-wrap:wrap;
+  /* flex-wrap:wrap; */
 }
 
 .mod-wrap {
   position: relative;
   flex-grow:0 0 auto;
-  width: 6em;
-  height: 6em;
+  width: 5em;
+  height: 5em;
 }
 
 .mod-image {
   border-radius: 50%;
   position: absolute;
   transition: box-shadow .3s ease-in-out;
-  width: 6em;
-  height: 6em;
+  width: 5em;
+  height: 5em;
 }
 
 .mod-overlay {
   background-color: #720E0E;
-  width:6em;
-  height:6em;
+  width:5em;
+  height:5em;
   border-radius: 50%;
   display: flex;
   position: absolute;
@@ -75,7 +76,7 @@ h2 {
   opacity:0;
   transition: opacity .5s .1s ease-in-out;
   text-align: center;
-  font-size: .83em;
+  font-size: .6em;
 }
 
 /* Pseudo-Classes */
@@ -118,4 +119,64 @@ h2 {
 
 #name05 {
   left:5%;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px){
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .wrapper {
+    min-width:320px;
+  }
+
+  .mod-container-all {
+    flex-direction:column;
+    align-items: flex-start;
+    height:600px;
+    padding-left: 100px;
+
+  }
+
+  .mod-wrap {
+    /* align-self: center; */
+  }
+
+  .mod-overlay {
+    position:relative;
+    overflow:visible;
+    background-color: transparent;
+    opacity:1;
+  }
+
+  .mod-number {
+    color:#720E0E;
+    position: absolute;
+    top:20%;
+    left:-60px;
+    /* transform: translateX(0px); */
+    transition: opacity 0s;
+    opacity:1;
+  }
+
+  .faculty-name {
+    opacity:1;
+    right:-200px;
+    top:30%;
+    font-size: .8em;
+
+  }
+
+  .mod-wrap:hover .mod-number {
+    transform: translateX(0px);
+    opacity:1;
+  }
+
+  .mod-wrap:hover .mod-overlay {
+    opacity:1;
+    overflow: visible;
+  }
 }
